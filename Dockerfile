@@ -14,6 +14,7 @@ run	apt-get install -y x11vnc xvfb openbox
 
 # Install the specific tzdata-java we need
 run     apt-get -y install wget
+
 run     wget --no-check-certificate http://launchpadlibrarian.net/255869664/tzdata_2016d-0ubuntu0.14.04_all.deb
 run     dpkg -i tzdata_2016d-0ubuntu0.14.04_all.deb
 run     wget --no-check-certificate https://launchpad.net/ubuntu/+source/tzdata/2016d-0ubuntu0.14.04/+build/9626356/+files/tzdata-java_2016d-0ubuntu0.14.04_all.deb
