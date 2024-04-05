@@ -1,4 +1,4 @@
-docker-firefox-java
+dockfire
 ==============
 
 Firefox over Docker via VNC including the necessary Java plugins to support working with a bunch of old Java/Web based management interfaces, such as old Dell DRAC, or Brocade FC switches. This is the product of not being able to access old Dell 1950 servers using current browsers. This Docker image provides an easy way to spin up a browser with full support.
@@ -15,15 +15,15 @@ kernelCommandLine = vsyscall=emulate
 
 # Optional: Prepare Windows Firewall
 
-Open Powershell ISE on the host machine as Administrator, import the script [`unlock-wsl2-fw.ps1`](https://github.com/high3eam/docker-firefox-java/blob/master/unlock-wsl2-fw.ps1), change the IP of the container and then run it (Click on play button).
+Open Powershell ISE on the host machine as Administrator, import the script [`unlock-wsl2-fw.ps1`](https://github.com/high3eam/dockfire/blob/master/unlock-wsl2-fw.ps1), change the IP of the container and then run it (Click on play button).
 
 # How to use
 
 1. Clone the repo:
 
     ```
-    git clone https://github.com/high3eam/docker-firefox-java.git
-    cd docker-firefox-java
+    git clone https://github.com/high3eam/dockfire.git
+    cd dockfire
     ```
 
 2.  Build the docker image
