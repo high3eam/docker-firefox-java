@@ -1,14 +1,13 @@
-version: '2'
-
 services:
-    docker-firefox-java:
-        container_name: docker-firefox-java
+    dockfire:
+        container_name: dockfire
         build:
           context: ./
           dockerfile: Dockerfile
-        image: ktelep/docker-firefox-java
+        image: dockfire
         ports:
           - 5900:5900
+        command: x11vnc -forever -create
         volumes:
           - /data/iso:/data
         restart: unless-stopped
